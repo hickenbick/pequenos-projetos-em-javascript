@@ -1,0 +1,154 @@
+/* GLOBAL */
+@keyframes blink {
+  0% { opacity: 0.2;}
+  50% { opacity: 1;}
+  100% { opacity: 0.2;}
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: arial;
+}
+
+
+/* VOTING MACHINE */
+
+.voting-machine {
+  background-color: #dbd5c9;
+  padding: 20px;
+  display: flex;
+}
+.screen {
+  width: 400px;
+  height: 320px;
+  background: linear-gradient(to right, #E8E8E8, #C1C1C1 );
+  margin-right: 20px;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px #000;
+}
+
+/* KEYBOARD */
+
+.keyboard {
+  background-color: #403A3A;
+  padding: 5px;
+}
+.keyboard--button {
+  width: 100px;
+  height: 40px;
+  background-color: #000;
+  color: #FFF;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 1.5px 1.5px 1.5px #999;
+}
+.keyboard--line {
+  display: flex;
+  justify-content: center;
+}
+.btn--branco {
+  background: #FFF;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 65px;
+}
+.btn--corrige {
+  background: rgb(182, 43, 43);
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 65px;
+}
+.btn--confirma {
+  background: green;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 65px;
+}
+
+/* TELA */
+
+.div-1 {
+  flex: 1;
+  display: flex;
+}
+.div-2 {
+  height: 50px;
+  font-size: 1rem;
+  border-top: 2px solid #000;
+  padding: 15px;
+}
+.div-1--left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.div-1--right {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.div-1--right img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 1.5px solid #000;
+  box-sizing: border-box;
+}
+.right-img {
+  background-color: #FFF;
+  text-align: center;
+  font-size: .75rem;
+}
+.small {
+  width: 80%;
+}
+.div-1--right {
+  
+}
+.text-1,
+.text-2,
+.text-3,
+.text-4 {
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+.text-2 {
+  justify-content: center;
+}
+.text-4 {
+  height: initial;
+  flex: 1;
+}
+.number {
+  width: 25px;
+  height: 35px;
+  margin-right: .2rem;
+  border: solid 1.5px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.blink {
+  animation-name: blink;
+  animation-duration: .9s;
+  animation-iteration-count: infinite;
+}
