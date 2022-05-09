@@ -1,44 +1,44 @@
 let etapas = [
   {
     title: "VEREADOR",
-    numbers: 5,
+    numeros: 5,
     candidato: [
       {
-        numero: '00017',
-        nome: "Bolsonaro",
-        partido: "ABC",
-        fotos: [{ url: "./img/bolsonaro.png", legenda: "Bolsonaro", small: false }],
+        numero: '11178',
+        nome: "Vereador 1 1",
+        partido: "P1",
+        fotos: [{ url: "./img/candidato.jpg", legenda: "VEREADOR 1", small: false }],
       },
       {
-        numero: '00013',
-        nome: "Lula FDP",
-        partido: "PT",
-        fotos: [{ url: "./img/lula.jpg", legenda: "Lula", small: false }],
+        numero: '77723',
+        nome: "Vereador 2",
+        partido: "P2",
+        fotos: [{ url: "./img/candidato.jpg", legenda: "VEREADOR 2", small: false }],
       },
     ],
   },
   {
     title: "PREFEITO",
-    numbers: 2,
-    candidates: [
+    numeros: 2,
+    candidato: [
       {
-        number: '77222',
-        name: "Beltrano da Silva",
-        guild: "DEFG",
-        vice: "cic",
-        photos: [
-          { url: "./99.jpg", legenda: "Prefeito" },
-          { url: "./99_2.jpg", legenda: "Vice-Prefeito", small: true },
+        numero: '78',
+        nome: "Prefeito 1",
+        partido: "P1",
+        vice: "Vice-Prefeito 1",
+        fotos: [
+          { url: "./img/candidato.jpg", legenda: "Prefeito 1" },
+          { url: "./img/candidato.jpg", legenda: "Vice-Prefeito", small: true },
         ],
       },
       {
-        number: '77222',
-        name: "Beltrano da Silva",
-        guild: "DEFG",
-        vice: "cic",
-        photos: [
-          { url: "./99.jpg", legenda: "Prefeito" },
-          { url: "./99_2.jpg", legenda: "Vice-Prefeito", small: true },
+        numero: '23',
+        nome: "Prefeito 2",
+        partido: "P2",
+        vice: "Vice-Prefeito 2",
+        fotos: [
+          { url: "./img/candidato.jpg", legenda: "Prefeito 2" },
+          { url: "./img/candidato.jpg", legenda: "Vice-Prefeito", small: true },
         ],
       },
     ],
