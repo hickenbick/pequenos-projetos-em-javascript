@@ -5,83 +5,157 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Electronic Voting Machine v2</title>
+  <title>Urna Eletrônica Brasileira</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-  <div class="urna">
+  <!-- titulo -->
 
-    <div class="tela">
-      <div class="d-1">
-        <div class="d-1-left">
-
-          <div class="d-1-1">
-            <span>SEU VOTO PARA:</span>
-          </div>
-          <div class="d-1-2">
-            <span>VEREADOR / PREFEITO</span>
-          </div>
-          <div class="d-1-3">
-            <div class="n pisca">3</div>
-            <div class="n">8</div>
-          </div>
-          <div class="d-1-4">
-            <span>Nome: NOME DO CANDIDATO</span><br>
-            <span>Partido: NOME DO PARTIDO</span><br>
-            <span>Nome do vice: NOME DO VICE</span>
-          </div>
-
-        </div>
-        <div class="d-1-right">
-          <div class="d-1-img">
-            <img src="../img/candidato-1.png" alt="...">
-            Prefeito
-          </div>
-          <div class="d-2-img">
-            <img src="../img/candidato-2.png" alt="...">
-            Vice
-          </div>
-        </div>
-
-
-      </div>
-      <div class="d-2">
-        Aperte a tela: <br>
-        CONFIRMA para CONFIRMAR este voto; <br>
-        CORRIGE para REINICIAR teste voto; <br>
-      </div>
-    </div>
-
-    <div class="teclado">
-      <div class="teclado--linha">
-        <div class="teclado--botao" onclick="clicou('1')">1</div>
-        <div class="teclado--botao" onclick="clicou('2')">2</div>
-        <div class="teclado--botao" onclick="clicou('3')">3</div>
-      </div>
-      <div class="teclado--linha">
-        <div class="teclado--botao" onclick="clicou('4')">4</div>
-        <div class="teclado--botao" onclick="clicou('5')">5</div>
-        <div class="teclado--botao" onclick="clicou('6')">6</div>
-      </div>
-      <div class="teclado--linha">
-        <div class="teclado--botao" onclick="clicou('7')">7</div>
-        <div class="teclado--botao" onclick="clicou('8')">8</div>
-        <div class="teclado--botao" onclick="clicou('9')">9</div>
-      </div>
-      <div class="teclado--linha">
-        <div class="teclado--botao" onclick="clicou('0')">0</div>
-      </div>
-      <div class="teclado--linha">
-        <div class="teclado--botao btn--branco" onclick="branco()">BRANCO</div>
-        <div class="teclado--botao btn--corrige" onclick="corrige()">CORRIGE</div>
-        <div class="teclado--botao btn--confirma" onclick="confirma()">CONFIRMA</div>
-      </div>
-
-    </div>
+  <div class="titulo--principal container">
+    <h1>URNA ELETRÔNICA</h1>
+    <P>Confira o número do seu candidato abaixo e realize a votação.</P>
   </div>
 
+  <!-- urna -->
+  <main>
+    <div class="urna">
+
+      <!-- tela -->
+      <div class="tela">
+        <div class="d-1">
+          <div class="d-1-left">
+            <div class="d-1-1">
+              <span>SEU VOTO PARA:</span>
+            </div>
+            <div class="d-1-2">
+              <span>VEREADOR</span>
+            </div>
+            <div class="d-1-3">
+              <div class="n pisca">3</div>
+              <div class="n">8</div>
+            </div>
+            <div class="d-1-4">
+              <span>Nome: NOME DO CANDIDATO</span><br>
+              <span>Partido: NOME DO PARTIDO</span><br>
+              <span>Nome do vice: NOME DO VICE</span>
+            </div>
+          </div>
+          <div class="d-1-right">
+            <div class="d-1-img">
+              <img src="../img/candidato-1.png" alt="...">
+              Prefeito
+            </div>
+            <div class="d-2-img">
+              <img src="../img/candidato-2.png" alt="...">
+              Vice
+            </div>
+          </div>
+        </div>
+        <div class="d-2">
+          Aperte a tela: <br>
+          CONFIRMA para CONFIRMAR este voto; <br>
+          CORRIGE para REINICIAR teste voto; <br>
+        </div>
+      </div>
+
+      <!-- teclado -->
+      <div class="teclado">
+        <div class="teclado--linha">
+          <div class="teclado--botao" onclick="clicou('1')">1</div>
+          <div class="teclado--botao" onclick="clicou('2')">2</div>
+          <div class="teclado--botao" onclick="clicou('3')">3</div>
+        </div>
+        <div class="teclado--linha">
+          <div class="teclado--botao" onclick="clicou('4')">4</div>
+          <div class="teclado--botao" onclick="clicou('5')">5</div>
+          <div class="teclado--botao" onclick="clicou('6')">6</div>
+        </div>
+        <div class="teclado--linha">
+          <div class="teclado--botao" onclick="clicou('7')">7</div>
+          <div class="teclado--botao" onclick="clicou('8')">8</div>
+          <div class="teclado--botao" onclick="clicou('9')">9</div>
+        </div>
+        <div class="teclado--linha">
+          <div class="teclado--botao" onclick="clicou('0')">0</div>
+        </div>
+        <div class="teclado--linha">
+          <div class="teclado--botao btn--branco" onclick="branco()">BRANCO</div>
+          <div class="teclado--botao btn--corrige" onclick="corrige()">CORRIGE</div>
+          <div class="teclado--botao btn--confirma" onclick="confirma()">CONFIRMA</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- candidatos -->
+  <section>
+    <div class="container">
+      <div class="titulo--h2-candidatos">
+        <h2>CANDIDATOS</h2>
+      </div>
+      <div class="big-box">
+        <div class="container--candidatos">
+          <div>
+            <h3 class="titulo--h3-candidatos">VEREADORES:</h3>
+          </div>
+          <div class="small--box">
+            <div class="candidato">
+              <ul>
+                <li>Nome: Carlos</li>
+                <li>Partido: A</li>
+                <li><img src="../img/candidato-1.png" alt="Candidato Carlos"></li>
+                <li class="numero"><strong>11111</strong></li>
+              </ul>
+            </div>
+            <div class="candidato">
+              <ul>
+                <li>Nome: Maria</li>
+                <li>Partido: B</li>
+                <li><img src="../img/candidato-2.png" alt="Candidata Maria"></li>
+                <li class="numero"><strong>22222</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container--candidatos">
+          <div>
+            <h3 class="titulo--h3-candidatos">PREFEITOS:</h3>
+          </div>
+          <div class="small--box">
+            <div class="candidato">
+              <ul>
+                <li>Nome: Marcos</li>
+                <li>Partido: A</li>
+                <li>Vice: Daniela</li>
+                <li><img src="../img/candidato-3.png" alt="Candidato Marcos"></li>
+                <li class="numero"><strong>11</strong></li>
+              </ul>
+            </div>
+            <div class="candidato">
+              <ul>
+                <li>Nome: Luana</li>
+                <li>Partido: B</li>
+                <li>Vice: Thiago</li>
+                <li><img src="../img/candidato-5.png" alt="Candidato 1"></li>
+                <li class="numero"><strong>22</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="bg--footer">
+      <p>Codificado por Rodrigo Hickenbick</p>
+    </div>
+  </footer>
+
+  <!-- links -->
   <script src="./etapas.js"></script>
   <script src="./script.js"></script>
 </body>
