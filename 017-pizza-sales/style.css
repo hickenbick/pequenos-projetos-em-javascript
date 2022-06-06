@@ -60,6 +60,15 @@ main {
 }
 h1 {
     font-family:'Hepta Slab', Helvetica, Arial;
+    text-align: center;
+    margin-bottom: 0px;
+}
+h4 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-family: arial;
+    color: #244C88;
 }
 .pizza-area {
     display:grid;
