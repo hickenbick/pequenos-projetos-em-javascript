@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+body,
+img {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+header {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+.header {
+  padding: 20px 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+.header h1 {
+  font-weight: 600;
+}
+.header p {
+  font-size: 0.9rem;
+}
+.slider {
+  flex: 1;
+  overflow: hidden;
+}
+.slider--width {
+  height: 100%;
+  display: flex;
+  transition: all ease 0.5s;
+  margin-left: -200vw;
+}
+.slider--item {
+  width: 100vw;
+  height: inherit;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 2rem;
+  color: #f8f8f8;
+  font-family: "Gotham Rounded";
+  font-weight: 400;
+}
+.slider--controls {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider--control {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #eee;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texto-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+  width: 100vw;
+  text-align: center;
+}
+.footer {
+  padding: 20px 0;
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: .9rem;
+}
+.footer ul {
+  display: inline-block;
+  padding: 0;
+}
+.footer ul li {
+  margin-right: 0.7rem;
+  list-style: none;
+  display: inline-block;
+  margin-top: .7rem;
+}
+.footer ul li a {
+  color: #222;
+}

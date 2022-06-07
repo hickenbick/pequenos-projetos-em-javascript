@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <!-- header -->
+    <div class="header">
+      <h1>Slider JS</h1>
+      <p>Responsive slider made with JavaScript for study purposes only.</p>
+    </div>
+
+    <!-- slider -->
+    <div class="slider">
+      <div class="slider--controls">
+        <div class="slider--control" onclick="goPrev()"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="slider--control" onclick="goNext()"><i class="fa-solid fa-angle-right"></i></div>
+      </div>
+      <div class="slider--width">
+        <div class="slider--item" style="background-image: url('./img/img-1.jpg')">
+          <div class="texto-box">Landscape 1</div>
+        </div>
+        <div class="slider--item" style="background-image: url('./img/img-2.jpg')">
+          <div class="texto-box">Landscape 2</div>
+        </div>
+        <div class="slider--item" style="background-image: url('./img/img-3.jpg')">
+          <div class="texto-box">Landscape 3</div>
+        </div>
+        <div class="slider--item" style="background-image: url('./img/img-4.jpg')">
+          <div class="texto-box">Landscape 4</div>
+        </div>
+        <div class="slider--item" style="background-image: url('./img/img-5.jpg')">
+          <div class="texto-box">Landscape 5</div>
+        </div>
+        <div class="slider--item" style="background-image: url('./img/img-6.jpg')">
+          <div class="texto-box">Landscape 6</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- conteudo -->
+  <section>
+    <div class="footer">
+      <p>Coded by Rodrigo Hickenbick
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/rodrigo.hickenbick/">
+            <i class="fa-brands fa-instagram fa-xl"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/rodrigo-hickenbick/">
+            <i class="fa-brands fa-linkedin fa-xl"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/hickenbick">
+            <i class="fa-brands fa-github fa-xl"></i>
+          </a>
+        </li>
+      </ul>
+      </p>
+    </div>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
