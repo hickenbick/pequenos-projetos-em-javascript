@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulary Checker</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="screen">
+    <div class="leftside">
+      <img src="./img/img.png" alt="">
+    </div>
+    <div class="rightside">
+      <div>
+        <div class="h1--rightside">
+          <h1>Sign up</h1>
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+        <form method="POST" class="validator" class="reuired|min=2">
+          <label>
+            Full name:<br>
+            <input type="text" name="name" data-rules="required"><br>
+          </label>
+          <label>
+            E-mail:<br>
+            <input type="email" name="email" data-rules="required"><br>
+          </label>
+          <label>
+            Password:<br>
+            <input type="password" name="password" data-rules="required"><br>
+          </label>
+          <label>
+            <input class="btn" type="submit" name="Subscribe" value="Subscribe"><br>
+          </label>
+        </form>
+
+        <div class="signup">
+          Have an account already? <a href="/">log in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

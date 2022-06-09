@@ -1,0 +1,77 @@
+*{
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  -webkit-font-smooth: antialiased;
+}
+body, h1, h2, h3, h4, h5, h6, ul, li, img {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+.screen {
+  display: flex;
+  height: 100vh;
+}
+.leftside {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.leftside img{
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+}
+.rightside {
+  width: 400px;
+  background-color: #EEE;
+  padding: 30PX;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+}
+.rightside h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.rightside form label input {
+  border: 0;
+  border-radius: 2px; padding: .3rem .5rem;
+  font-size: 15px;
+  color: #444;
+  font: arial;
+  width: 250px;
+  margin-bottom: .5rem;
+}
+.rightside form label{
+  font-size: .9rem;
+}
+.btn {
+  margin-top: .5rem;
+  padding: .5rem 1rem !important;
+  font-size: 1rem;
+  background-color: #57B894;
+  border: 0;
+  border-radius: 2px;
+  color: #FFF !important;
+  cursor: pointer;
+  width: 120px !important;
+}
+.btn:hover {
+  background-color: #4EA685;
+}
+.signup {
+  margin-top: .2rem;
+  font-size: .8rem;
+  color: #222;
+}
+.h1--rightside h1 {
+  display: inline-block;
+}
