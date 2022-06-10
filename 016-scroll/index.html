@@ -1,32 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scroll</title>
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>scroll project</h1>
-    <!-- header -->
-    <header id="home">
-      <!-- navbar -->
-      <nav id="nav">
-        <div class="nav-center">
-          <!-- nav header -->
-          <div class="van-header">
-            <img src=".logo.svg" alt="logo" class="logo">
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header id="home">
+    <!-- navbar -->
+    <nav id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./logo.svg" class="logo" alt="logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-      </nav>
-    </header>
-    <!-- javascript -->
-    <script src="app.js"></script>
-  </body>
+        <!-- links -->
+        <div class="links-container">
+          <ul class="links">
+            <li>
+              <a href="#home" class="scroll-link">home</a>
+            </li>
+            <li>
+              <a href="#about" class="scroll-link">about</a>
+            </li>
+            <li>
+              <a href="#services" class="scroll-link">services</a>
+            </li>
+            <li>
+              <a href="#tours" class="scroll-link">tours</a>
+            </li>
+            <li>
+              <a href="#tours" class="scroll-link">tours</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner info -->
+    <div class="banner">
+      <div class="container">
+        <h1>Scroll Project</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quaerat veniam neque nemo fugiat odit, dolorum voluptates dolore sed illum!</p>
+        <a href="#tours" class="scroll-link btn btn-white">Explore Tours</a>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- about -->
+  <section id="about" class="section">
+    <div class="title">
+      <h2>about <span>us</span></h2>
+    </div>
+  </section>
+  <!-- about end -->
+
+  <!-- services -->
+  <section id="services" class="section">
+    <div class="title">
+      <h2>Our <span>Services</span></h2>
+    </div>
+  </section>
+  <!-- services end -->
+
+  <!-- tours -->
+  <section id="tours" class="section">
+    <div class="title">
+      <h2>featured <span>tours</span></h2>
+    </div>
+  </section>
+  <!-- tours end -->
+
+  <!-- footer start -->
+  <footer class="section">
+    <p>
+      copyright &copy; backroads travel company <span class="date">2020</span>
+      .all rights reserved
+    </p>
+  </footer>
+  <!-- footer end -->
+
+  <!-- back to top btn start -->
+  <a href="#home" class="scroll-link top-link">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+  <!-- back to top btn end -->
+
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
 </html>
